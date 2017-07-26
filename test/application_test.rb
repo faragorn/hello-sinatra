@@ -3,7 +3,6 @@ require 'test_helper'
 class MyApplicationTest < ApplicationTest
   describe 'hello-world' do
     it 'must return 204' do
-      byebug
       get '/hello-world'
       last_response.status.must_equal 204
     end
